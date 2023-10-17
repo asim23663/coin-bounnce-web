@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
 
-const { MONGOOSE_CONNECTION_STRING } = require("../config/index");
-
-// const connetionString =
-// "mongodb+srv://asim23663:PrwKzDRC2iHqqtJq@cluster0.cwwwnb1.mongodb.net/coinn-bounnce?retryWrites=true&w=majority";
-//   "mongodb+srv://asim23663:<password>@cluster0.cwwwnb1.mongodb.net/DB name?retryWrites=true&w=majority";
+const { MONGOOSE_CONNECTION_STRING } = require("../config/index"); // destructure to use here
 
 const dbConnect = async () => {
   try {
