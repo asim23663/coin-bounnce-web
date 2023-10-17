@@ -1,4 +1,5 @@
 const express = require("express");
+const authController = require("../controller/authController");
 
 const router = express.Router();
 
@@ -6,8 +7,13 @@ const router = express.Router();
 router.get("/test", (req, res) => res.json({ msg: "Test is working fine!" }));
 
 // user
-// login
+
 // register
+router.post("/register", authController.register);
+
+// login
+router.post("/login", authController.login);
+
 // logout
 // refresh ==> JWT
 
